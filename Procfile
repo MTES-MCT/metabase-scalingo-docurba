@@ -1,1 +1,1 @@
-web: SCALINGO=true ./bin/start
+web: SCALINGO=true ./bin/start_with_oauth2_proxy.sh exec ./bin/start

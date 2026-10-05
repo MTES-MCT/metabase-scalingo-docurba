@@ -7,10 +7,6 @@ set -e
 
 # Translate various Scalingo environment variables to Metabase equivalents
 
-if [ "$PORT" ]; then
-    export MB_JETTY_PORT="$PORT"
-fi
-
 # Scalingo Postgres
 if [ "$DATABASE_URL" ]; then
     if [[ $DATABASE_URL == *"?"* ]]; then
